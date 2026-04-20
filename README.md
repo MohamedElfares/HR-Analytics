@@ -40,7 +40,7 @@ The dataset was provided by **DataCamp** as part of a guided case study. It foll
 | `DimRatingLevel` | Dimension | Lookup table for performance rating labels |
 | `DimSatisfiedLevel` | Dimension | Lookup table for satisfaction level labels |
 
-![Data Model](./assets/data_model.png)
+![Date Model](Images/Data%20Model.png)
 
 The key relationships established in the model connect `DimEmployee` to `FactPerformanceRating` via `EmployeeID`, with dimension lookup tables joined to the fact table using their respective ID columns. Several inactive relationships were defined and activated selectively in DAX measures using `USERELATIONSHIP()`.
 
@@ -222,7 +222,7 @@ NextReviewDate =
 
 ### 1. Overview
 
-![Overview Page](./assets/overview.png)
+![Overview](Images/Overview.png)
 
 The overview page provides a high-level snapshot of the workforce. Atlas Labs has a total of **1,470 employees**, of which **1,233 are currently active** and **237 have left**, resulting in an overall **attrition rate of 16.1%**.
 
@@ -232,7 +232,7 @@ The **Employee Hiring Trends** chart breaks down annual hires by attrition statu
 
 ### 2. Demographics
 
-![Demographics Page](./assets/demographics.png)
+![Demographics](Images/Demographics.png)
 
 The demographics page examines the workforce composition across age, gender, marital status, and ethnicity.
 
@@ -244,7 +244,7 @@ The demographics page examines the workforce composition across age, gender, mar
 
 ### 3. Performance Tracker
 
-![Performance Tracker Page](./assets/performance_tracker.png)
+![Performance Tracker](Images/Performance%20Tracker.png)
 
 The performance tracker is an employee-level drill-down page. Using the employee selector, HR managers can view any individual's hire date, last review date, and projected next review date (calculated as 365 days from the last review or hire date if no review exists yet).
 
@@ -256,7 +256,7 @@ Reference tables for both the satisfaction scale (Very Dissatisfied to Very Sati
 
 ### 4. Attrition
 
-![Attrition Page](./assets/attrition.png)
+![Attrition](Images/Attrition.png)
 
 The attrition page surfaces the key drivers behind the company's 16.1% attrition rate.
 
